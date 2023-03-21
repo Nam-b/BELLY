@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 초기화 -->
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+  <!-- 기본서식, 공통서식 -->
+  <link rel="stylesheet" href="./css/common.css" type="text/css">
+  <!-- 레이아웃서식 -->
+  <link rel="stylesheet" href="./css/layout.css" type="text/css">
+  <!-- 콘텐츠영역서식 -->
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+  <!-- 폰트어썸 주소 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- 제이쿼리 ui라이브러리 -->
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <!-- 제이쿼리 쿠키 연결하기 -->
+  <script src="./script/jquery.cookie.js"></script>
+  <!-- 공통스크립트 -->
+  <script src="./script/layout.js"></script>
+  <!-- 콘텐츠스크립트 -->
+  <script src="./script/main.js"></script>
+  <!-- 부트스트랩 아이콘!-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!-- React를 실행. -->
+  <!-- 주의: 사이트를 배포할 때는 "development.js"를 "production.min.js"로 대체하세요. -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <!-- 만든 React 컴포넌트를 실행. -->
+  <script src="like_button.js"></script>
+</head>
+<body>
+  <!-- 오른쪽으로 밀기 -->
+  <div class="push">
+    <!-- 오른쪽밀면 등장하는 gnb -->
+    <div class="push_wrap">
+      <p>categories</p>
+      <div class="cancel">x</div>
+      <ul>
+        <li><a href="" title="">푸시랩
+          <ul>
+            <li><a href="#" title="">푸시랩</a></li>
+            <li><a href="#" title="">푸시랩</a></li>
+            <li><a href="#" title="">푸시랩</a></li>
+            <li><a href="#" title="">푸시랩</a></li>
+            <li><a href="#" title="">푸시랩</a></li>
+          </ul>
+        </a>
+      </li>
+        <li><a href="" title="">푸시랩
+          <ul>
+            <li><a href="#" title="">푸시랩</a></li>
+            <li><a href="#" title="">푸시랩</a></li>
+            <li><a href="#" title="">푸시랩</a></li>
+            <li><a href="#" title="">푸시랩</a></li>
+            <li><a href="#" title="">푸시랩</a></li>
+          </ul>
+        </a>
+      </li>
+        <li><a href="" title="">푸시랩
+          <ul>
+            <li><a href="#" title="">푸시랩</a></li>
+            <li><a href="#" title="">푸시랩</a></li>
+            <li><a href="#" title="">푸시랩</a></li>
+            <li><a href="#" title="">푸시랩</a></li>
+            <li><a href="#" title="">푸시랩</a></li>
+          </ul>
+        </a>
+      </li>
+        <li><a href="" title="">푸시랩
+          <ul>
+            <li><a href="#" title="">푸시랩</a></li>
+            <li><a href="#" title="">푸시랩</a></li>
+            <li><a href="#" title="">푸시랩</a></li>
+            <li><a href="#" title="">푸시랩</a></li>
+            <li><a href="#" title="">푸시랩</a></li>
+          </ul>
+        </a>
+      </li>
+        <li><a href="" title="">푸시랩
+          <ul>
+            <li><a href="#" title="">푸시랩</a></li>
+            <li><a href="#" title="">푸시랩</a></li>
+            <li><a href="#" title="">푸시랩</a></li>
+            <li><a href="#" title="">푸시랩</a></li>
+            <li><a href="#" title="">푸시랩</a></li>
+          </ul>
+        </a>
+      </li>
+      </ul>
+    </div>
+    <!-- 메인헤더영역 -->
+  <header>
+    <!-- 우측 옵션 -->
+    <div><img src="./images/dsa04.png" alt=""></div>
+    <!-- sns영역 -->
+    <ul class="h_sns">
+      <li><a href="#" title="인스타그램"><span class="h_tip">SHARE</span><i class="fab fa-instagram-square"></i></a></li>
+      <li><a href="#" title="유튜브"><i class="fab fa-youtube"></i></a></li>
+      <li><a href="#" title="페이스북"><i class="fab fa-facebook-square"></i></a></li>
+      <li><a href="#" title="트위터"><i class="fab fa-twitter-square"></i></a></li>
+    </ul>
+
+    <section>
+      <h1><img src="./images/logo.png" alt=""></h1>
+
+      <!-- 장바구니 -->
+      <div class="h_wrap">
+      <div class="h_my">
+        <a href="#" title="마이페이지"><span class="h_count">2</span><i class="fas fa-user"></i>마이페이지</a>
+      </div>
+
+      <div class="h_cart">
+        <a href="#" title="장바구니"><span class="h_count">2</span><i class="fas fa-shopping-cart"></i>장바구니</a>
+      </div>
+    </div>
+
+      <!-- 헤더 gnb -->
+      <article class="header_wrap">
+      <ul class="h_gnb_wrap">
+        <li>
+          <a href="#" title="home">HOME
+          <ul class="lnb_wrap">
+            <li><a href="" title="">으아아</a></li>
+            <li><a href="" title="">으아아</a></li>
+            <li><a href="" title="">으아아</a></li>
+            <li><a href="" title="">으아아</a></li>
+          </ul>
+        </a>
+      </li>
+
+        <li>
+          <a href="#" title="home">SALE
+          <ul class="lnb_wrap">
+            <li><a href="" title="">우어어</a></li>
+            <li><a href="" title="">우어어</a></li>
+            <li><a href="" title="">우어어</a></li>
+            <li><a href="" title="">우어어</a></li>
+          </ul>
+        </a>
+      </li>
+
+        <li>
+          <a href="#" title="home">
+            DRESSES
+          <ul class="lnb_wrap">
+            <li><a href="" title="">이이이</a></li>
+            <li><a href="" title="">이이이</a></li>
+            <li><a href="" title="">이이이</a></li>
+            <li><a href="" title="">이이이</a></li>
+          </ul>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" title="home">SHOES
+            <ul class="lnb_wrap">
+              <li><a href="" title="">아아아</a></li>
+              <li><a href="" title="">아아아</a></li>
+              <li><a href="" title="">아아아</a></li>
+              <li><a href="" title="">아아아</a></li>
+            </ul>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" title="home">CONTACT
+            <ul class="lnb_wrap">
+              <li><a href="" title="">오우우</a></li>
+              <li><a href="" title="">오우우</a></li>
+              <li><a href="" title="">오우우</a></li>
+              <li><a href="" title="">오우우</a></li>
+            </ul>
+          </a>
+        </li>
+      </ul>
+      </article>
+      
+      <!-- 3개의 탭 -->
+      <article>
+        <ul class="tab_wrap">
+          <li><a href="#" title="">white</a></li>
+          <li><a href="#" title="">hot pink</a></li>
+          <li><a href="#" title="">pink</a></li>
+        </ul>
+      </article>
+
+      <article>
+        <!-- 3개의 컨트롤버튼 -->
+        <ul class="c_btn">
+          <li>&nbsp;</li>
+          <li>&nbsp;</li>
+          <li>&nbsp;</li>
+        </ul>
+        <!-- 3개의 슬라이드이미지 -->
+        <ul class="sanpum_wrap">
+          <li><a href="#"><img src="./images/dsa11.png" alt=""></a></li>
+          <li><a href="#"><img src="./images/dsa12.png" alt=""></a></li>
+          <li><a href="#"><img src="./images/dsa13.png" alt=""></a></li>
+        </ul>
+        <!-- 2개의 이미지 -->
+        <ul class="two_img">
+          <li>
+            <a href="#" title="">
+              <img src="./images/dsa64.jpg" alt="키즈상품">
+          <aside class="two_img_txt">KIDS상품
+          <p>이번달 특가 상품을 보러오세요</p>
+        <form action="">
+        <input type="button" id="btn" value="Shop Now">
+      </form>
+      </li>
+    </aside>
+
+          <li>
+            <a href="#" title="">
+              <img src="./images/dsa66 1.png" alt="">
+          <div class="two_img_txt">SALE상품
+          <p>이번달 특가 상품을 보러오세요</p>
+        </a>
+        <form action="">
+        <input type="button" id="btn" value="Shop Now">
+      </form>
+      </li>
+        </ul>
+      </article>
+    </section>
+  </header>
+
+  <main>
+    <!-- 메인 gnb -->
+    <section class="m_gnb_wrap">
+      
+    <h2><a href=# title="상품페이지로 이동">Best Product</a></h2>
+    <article>
+      <ul class="ma_wrap">
+        <li><a href="#" title="ALL">ALL</a></li>
+        <li><a href="#" title="NEW">NEW</a></li>
+        <li><a href="#" title="BEST">BEST</a></li>
+        <li><a href="#" title="LIVING">LIVING</a></li>
+        <li><a href="#" title="DIGITAL">DIGITAL</a></li>
+        <li><a href="#" title="FASION">FASION</a></li>
+      </ul>
+    </article>
+    
+    <!-- 상품카테고리 -->
+    <article class="categorie">
+      <div>
+        <a href="#" title="">
+        <img src="./images/dsa28.png" alt="">
+        <p class="p01">말랑말랑 벨리곰</p>
+        <span class="pre_price">150,000원</span><span class="p02">80,000원</span>
+        <p id="btn2">ADD CART</p>
+      </a>
+      </div>
+
+      <div class="img_mar">
+        <a href="#" title="">
+        <img src="./images/dsa48.jpg" alt="">
+        <p class="p01">분홍분홍 벨리돗자리</p>
+        <span class="pre_price">30,000원</span><span class="p02">12,000원</span>
+        <p id="btn2">ADD CART</p>
+      </a>
+      </div>
+
+      <div>
+        <a href="#" title="">
+        <img src="./images/dsa51.png" alt="">
+        <p class="p01">벨리벨리 이쁜 오르골</p>
+        <span class="pre_price">42,000원</span><span class="p02">23,000원</span>
+        <p id="btn2">ADD CART</p>
+      </a>
+      </div>
+
+      <div class="img_mar">
+        <a href="#" title="">
+        <img src="./images/dsa27.jpg" alt="">
+        <p class="p01">벨리 귀여운 학용품셋트</p>
+        <span class="pre_price">30,000원</span><span class="p02">12,000원</span>
+        <p id="btn2">ADD CART</p>
+      </a>
+      </div>
+
+      <div>
+        <a href="#" title="">
+        <img src="./images/dsa58.jpg" alt="">
+        <p class="p01">자꾸만 마시게되는 벨리컵</p>
+        <span class="pre_price">12,000원</span><span class="p02">8000원</span>
+        <p id="btn2">ADD CART</p>
+      </a>
+      </div>
+
+      <div>
+        <a href="#" title="">
+        <img src="./images/dsa62.jpg" alt="">
+        <p class="p01">벨리벨리 따뜻한 담요</p>
+        <span class="pre_price">24,000원</span><span class="p02">18,000원</span>
+        <p id="btn2">ADD CART</p>
+      </a>
+      </div>
+
+    </article>
+
+    <!-- 메인하단 메인배너 -->
+    <article class="m_banner_wrap">
+      <h2><a href=# title="상품페이지로 이동">New Product</a></h2>
+      <a href="#" title=""><img src="./images/Happy20new20year_EBB0B0EB84882028129-04 1.png" alt=""></a>
+      <!-- 이미지에 올라가는 모달 -->
+      <div class="m_banner_modal">
+        <div class="modal_wrap">
+        <p>이번달 아이템</p>
+        <p>벨리곰과 함께하는 봄이 왔벨</p>
+        
+        <span class="pre_price">15,000,000원</span>
+        <span class="aft_price">8,500,000원</span>
+          <form action="">
+        <input type="button" id="btn" value="Shop Now" class="btn_sub">
+      </form>
+      </div>
+      </div>
+    </article>
+
+    <!-- 벨리곰 스토리 -->
+    <article>
+      <!-- 컨트롤버튼 -->
+      <ul>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+      </ul>
+
+      <div class="">
+      <h2><a href="#" title="벨리곰프렌즈로">Belly Friends</a></h2>
+      <p>본문내용</p>
+      <p>본문내용2</p>
+      <p>본문내용3</p>
+      <img src="./images/dsa1.jpg" alt="">
+      </div>
+    </article>
+    </section>
+  </main>
+
+  <footer>
+    <h1><img src="./images/logo.png" alt=""></h1>
+
+    <ul class="f_wrap">
+      <li><a href="#" title="">About</a></li>
+      <li><a href="#" title="">Faq</a></li>
+      <li><a href="#" title="">Returns</a></li>
+      <li><a href="#" title="">contact</a></li>
+    </ul>
+
+    <ul class="f_wrap2">
+      <li><a href="#" title="">MY Account</a></li>
+      <li><a href="#" title="">shipping</a></li>
+      <li><a href="#" title="">Our Policies</a></li>
+      <li><a href="#" title="">MY Account</a></li>
+    </ul>
+    <address>
+      Copyright ©2023 All rights reserved | Made with  by Colorlib & distributed by ThemeWagon
+    </address>
+        <!-- sns영역 -->
+        <ul class="h_sns">
+          <li><a href="#" title="인스타그램"><span class="h_tip">SHARE</span><i class="fab fa-instagram-square"></i></a></li>
+          <li><a href="#" title="유튜브"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="#" title="페이스북"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a href="#" title="트위터"><i class="fab fa-twitter-square"></i></a></li>
+        </ul>
+  </footer>
+</div>
+
+</body>
+</html>

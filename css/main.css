@@ -1,0 +1,214 @@
+@charset "utf-8";
+/* gnb20  lnb16 그이하 14*/
+.h_sns{
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+/* 숨기기 */
+.push_wrap{
+  display: none;
+}
+
+/* 헤더로고 */
+header{
+  width: 1920px;
+}
+section>h1{
+  text-align: center;
+}
+
+/* 장바구니 */
+.h_wrap{
+  width: 100%;
+  display: flex;
+  justify-content:space-around
+}
+.h_my{position: relative;}
+.h_cart{position: relative;}
+.h_count{
+  text-align: center;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  background: #E15B71;
+  color: #fff;
+  border-radius: 50%;
+}
+i{font-size: 18px;}
+/* 헤더 gnb */
+.header_wrap{
+  margin: 0px auto;
+  width:600px;
+  line-height: 40px;
+}
+.h_gnb_wrap{
+  display: flex;
+  justify-content: space-around;
+}
+.h_gnb_wrap>li>a{
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 1px rgba(255,255,255,0.4)}
+/* 헤더 lnb */
+.lnb_wrap{display: none;}
+.lnb_wrap>li{
+  text-align: center;
+  width: 100px;
+  background: #E15B71;
+}
+/* 3개의 탭 */
+.tab_wrap{
+  display: flex;
+}
+.tab_wrap li{
+  width: 33.3%;
+  height: 100px;
+  text-align: center;
+}
+.tab_wrap>li:first-child{
+  background: #fff;
+}
+.tab_wrap>li:first-child>a{
+  color:#333;
+}
+.tab_wrap>li:nth-child(2){
+  background: #DE96A2;
+}
+.tab_wrap>li:last-child{
+  background: #E15B71;
+}
+/* 3개의 컨트롤 버튼 */
+.c_btn{
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  z-index: 10;
+}
+.c_btn li{
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+/* 메인슬라이드 */
+.sanpum_wrap{
+  display: flex;
+  position: relative;
+
+}
+.sanpum_wrap li img{
+  height: 600px;
+}
+/* 슬라이드 밑 2개이미지 */
+.two_img{
+  display: flex;
+}
+.two_img>li{
+  width: 100%;
+  position: relative;
+  transform: translateY(-4px);
+}
+.two_img>li>a>img{
+  width: 100%;
+  height: 680px;
+}
+.two_img_txt{
+  position: absolute;
+  line-height: 50px;
+  top:50%;
+  left: 10%;
+  font-size: 40px;
+}
+/* 이미지에 올라가는 텍스트 */
+
+/* 메인 gnb */
+.m_gnb_wrap{width: 100%;}
+
+.ma_wrap{
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  margin: 20px auto;
+}
+.ma_wrap>li>a{
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 1px rgba(255,255,255,0.4);
+}
+
+/* 상품카테고리 */
+.categorie{
+  width:calc(100% - 500px);
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  margin: 0px auto;
+}
+
+.categorie>div{
+  width:30%;
+  text-align: center;
+  line-height:35px;
+  margin:10px 0px;
+}
+.categorie>div>a>img{
+  width: 100%;
+}
+.p01{
+  font-size: 24px;
+  font-weight: bold;
+  
+}
+.p02{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 메인하단 메인배너 */
+.m_banner_wrap{
+  position: relative;
+  width: 100%;
+  
+}
+.m_banner_wrap>a>img{
+  width: 100%;
+
+}
+.m_banner_modal
+{
+  display: flex;
+  align-items: center;
+  width: 400px;
+  height: 280px;
+  background: rgba(255, 253, 217, 0.8);
+
+  position: absolute;
+  top: 50%;
+  left: 60%;
+}
+
+.btn_sub{
+  border: 3px solid  rgba(67, 67, 68, 0.8) !important;
+  color: rgba(67, 67, 68, 0.8);
+  font-size: 16px;
+}
+.modal_wrap{
+  width: 250px;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 40px;
+}
+.modal_wrap>p{
+  color: rgba(67, 67, 68, 0.9);
+  font-weight: bold;
+}
+
+.aft_price{
+  color: rgba(67, 67, 68, 0.9);
+}
+/* 벨리곰  */
